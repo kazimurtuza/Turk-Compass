@@ -34,7 +34,12 @@ app.use("/api/v1/payment",require("./routes/paymentRoutes"))
 
 // job
 app.use("/api/v1/job",require("./routes/jobRoutes"))
-
+//category
+app.use("/api/v1/category",require("./routes/categoryRoutes"))
+//sub category
+app.use("/api/v1/subcategory",require("./routes/subCategoryRoutes"))
+//business post
+app.use("/api/v1/business-post",require("./routes/businessPostRoutes"))
 
 app.get("/",(req,res)=>{
     return res.status(200).send("<h1> Welcome to turk compass server app </h1>")

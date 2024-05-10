@@ -19,7 +19,7 @@ const userSchema=new mongoose.Schema({
         type:String,
         required:[true,'user type is required'],
         default:'client',
-        enum:['client','admin'],
+        enum:['client','admin','business-owner'],
     },
     package_type:{
         type:String,
